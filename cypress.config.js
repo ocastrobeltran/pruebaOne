@@ -6,4 +6,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  reporter: 'mocha-junit-reporter',
+  reporterOptions: {
+    mochaFile: 'results/test-results-[hash].xml',
+  },
 });
